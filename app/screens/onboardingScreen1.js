@@ -14,8 +14,14 @@ function Screen1({ navigation }) {
   };
   return (
     <SafeAreaView style={styles.container}>
-      <Image source={require("../assets/onboarding-1.png")}></Image>
-      <Text style={styles.heading}>Powerful Image Hosting</Text>
+      <Image style={styles.image} source={require("../assets/onboarding-1.png")}></Image>
+      <View style={{
+    backgroundColor: 'black',
+    height: 2,
+    width:'100%',
+    }}
+/>
+      <Text style={styles.heading}>Powerful Features</Text>
       <Text style={styles.paragraph}>
         Upload, access, organize, edit, and share your photos from any device,
         from anywhere in the world.
@@ -32,6 +38,9 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
+  },
+  image:{
+    marginBottom: 20,
   },
   heading: {
     fontSize: 26,

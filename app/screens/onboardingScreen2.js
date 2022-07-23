@@ -14,7 +14,7 @@ function Screen2({ navigation }) {
   };
   return (
     <SafeAreaView style={styles.container}>
-      <Image source={require("../assets/onboarding-2.png")}></Image>
+      <Image style={styles.image} source={require("../assets/onboarding-2.png")}></Image>
       <Text style={styles.heading}>What is Reservo?</Text>
       <Text style={styles.paragraph}>
         Upload Your Images From Any Device. Lots of Free Storage for Your
@@ -35,6 +35,9 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
+  },
+  image:{
+    padding:30,
   },
   heading: {
     fontSize: 26,

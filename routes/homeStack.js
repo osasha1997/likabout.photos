@@ -3,6 +3,8 @@ import { createAppContainer } from "react-navigation";
 import Screen1 from "../app/screens/onboardingScreen1";
 import Screen2 from "../app/screens/onboardingScreen2";
 import Screen3 from "../app/screens/onboardingScreen3";
+import Signup from "../app/screens/signup";
+import Signin from "../app/screens/signin";
 
 const screens = {
   onboarding1: {
@@ -22,6 +24,12 @@ const screens = {
     navigationOptions: {
       header: null,
     },
+  },
+  Signup: {
+    screen: Signup,
+  },
+  Signin: {
+    screen: Signin,
   },
 };
 

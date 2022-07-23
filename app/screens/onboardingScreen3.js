@@ -8,7 +8,10 @@ import {
   Button,
 } from "react-native";
 
-function Screen3(props) {
+function Screen3({ navigation }) {
+  const pressHandler = () => {
+    navigation.push("Signin");
+  };
   return (
     <SafeAreaView style={styles.container}>
       <Image source={require("../assets/onboarding-3.png")}></Image>
@@ -19,7 +22,7 @@ function Screen3(props) {
         }
       </Text>
       <View style={styles.button}>
-        <Button color="white" title=">"></Button>
+        <Button color="white" title=">" onPress={pressHandler}></Button>
       </View>
     </SafeAreaView>
   );
